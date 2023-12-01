@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA FASHION</title>
+    <link rel="stylesheet" href="css/estiloweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<main class="contenedor-general">
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="imagen/logo.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#">informacion</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">contactos</a></li>
+                <li><a class="cerrar-sesion" href="index.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h1>PRODUCTOS</h1>
+        <hr> <br>
+
+        <div class="filtro">
+            <label>Filtrar por genero</label>
+            <input id="filtroGenero">
+            <label>Filtrar por nombre</label>
+            <input id="filtroNombre">
+            <label>Filtrar por marca</label>
+            <input id="filtroMarca">
+            <button onclick="filtrar()">Filtrar</button>
+            <button onclick="borrarFiltros()">Borrar</button>
+            <hr>
+        </div>
+
+        <br>
+        <br>
+
+        <main class="products container product-content " id="product-container">
+        </main>
+
+        <ul class="paginacion" id="paginacion"></ul>
+
+        <button class="btn-2" onclick="regresarPag()">Atras</button>
+        <button class="btn-2" onclick="nextPag()">Siguiente</button>
+
+    </section>
+</main>
+
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="">¿Quiénes somos?</a></li>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="">Políticas y términos de uso</a></li>
+                    <li><a href="">Puntos Saludables</a></li>
+                    <li><a href="">Términos y condiciones de puntos saludables</a></li>
+                </ul>
+            </div>
+
+
+            <div class="link">
+                <h3>Enlaces de interés</h3>
+                <ul>
+                    <li><a href="">SIC (Superintendencia de Industria y Comercio).</a></li>
+                    <li><a href="">Superfinanciera</a></li>
+                    <li><a href="">Crear una cuenta en MercadoPago</a></li>
+                    <li><a href="">Cómo retirar el dinero de MercadoPago</a></li>
+                </ul>
+            </div>
+
+
+            <div class="link">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="">PQRS</a></li>
+                    <li><a href="">Líneas de atención call center</a></li>
+                    <li><a href="">Barranquilla 605 3111155</a></li>
+                    <li><a href="">Cali 605 3111155</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>SÍGUENOS</h3>
+                <ul>
+                    <li><i class='bx bxl-facebook-square bx-md' style='color:#3368ff'></i></li>
+                    <li><i class='bx bxl-instagram bx-md' style='color:rgba(224,118,14,0.95)'></i></li>
+                    <li><i class='bx bxl-twitter bx-md' style='color:rgba(76,183,255,0.95)'></i></li>
+                    <li><i class='bx bxl-youtube bx-md' style='color:rgba(234,14,14,0.95)'></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/productos.js"></script>
+
+</body>
+
+</html>

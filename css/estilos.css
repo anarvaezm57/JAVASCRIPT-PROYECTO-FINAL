@@ -1,0 +1,315 @@
+ *{
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../imagen/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor{
+    position: relative;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    background: rgba(7, 32, 115, 0.3);
+    height: 500PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor h2{
+    font-size:  2.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.input-contenedor{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-contenedor input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: - 35px 0 5px;
+    color: #fff;
+}
+
+.input-contenedor i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+.olvidar{
+    margin: -15px 0 15px;
+    font-size: .9rem;
+    color: #fff;
+    justify-content: center;
+}
+
+.olvidar label input{
+    margin: 3px;
+}
+
+.olvidar label a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .9em;
+}
+
+.olvidar label a:hover{
+    text-decoration: underline;
+}
+
+
+.btn input{
+        width: 100%;
+        height: 33px;
+        border-radius: 40px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.1s ease;
+        margin: 10px 0 2px;
+        
+}
+
+.btn input:hover{
+    background-color: rgb(32, 116, 218);
+}
+
+.btn{
+    text-align: center;
+}
+.formulario a{
+    text-decoration: none;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+.registrar{
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.required{
+    color: #fff;
+    font-size: 13px;
+    
+}
+
+ .obl{
+    font-size: 12px;
+    color: #970c13fd;
+    margin: 10px 0 5px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+/*.logo{
+    font-size: 2.3rem;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+*/
+
+.navegacion a{
+    position: relative;
+    font-size: 1rem;
+    color:rgb(32, 116, 218);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navegacion a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background:rgb(32, 116, 218);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4ps;
+}
+
+.navegacion a:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+.navegacion button1 a{
+    color: red;
+}
+
+.fondo2 img{
+    height: 77rem;
+
+}
+
+
+
+
+
+/*
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color:rgba(10, 71, 202, 0.4);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px    ;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background:  transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+.contenedor__login-registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+  
+}
+
+.contenedor__login-registro form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor__login-registro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+}
+*/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>  
+<section>
+    <div class="contenedor">
+        <div class="formulario">
+            <form action="#">
+                <h2>Iniciar Sesion</h2>
+                
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" required name="usuario" id="usuario">
+                    <label for="">Usuario</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" required name="clave" id="clave">
+                    <label for="#">Contraseña</label>
+                </div>
+
+                
+                
+                <div class="required">
+                    <p>
+                        La contraseña debe tener:
+                        <p class="obl">
+                        como minimo 8 carcateres<br>
+                        una mayuscula <br>
+                        una minuscula <br>
+                        dos numeros <br>
+                        un caracter especial(@ # & - . *) <br>
+                    </p>
+                    </p>
+                </div>
+            </form>
+
+
+            <div class="btn">
+                <input type="button" value="Acceder" id="boton" onclick="login()"> 
+                <input type="reset" value="Limpiar">
+            
+
+                <div class="registrar">
+                    <p>No tengo Cuenta <a href="#">Crear una cuenta</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="./js/login.js"></script>
+
+<!--  <main>
+    <div class="contenedor__todo">
+
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>Ya tienes cuenta?</h3>
+                <p>inicia sesion para ingresar</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+            </div>
+            <div class="caja__trasera-registro">
+                <h3>Aun no tienes una cuenta?</h3>
+                <p>registrate para que puedas iniciar sesion</p>
+                <button id="btn__iniciar-registrarse">Registrarse</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor__login-registro">
+
+        <form action="" class="formulario__login">
+            <h2>Inciar sesion</h2>
+            <input type="text" placeholder="correo electronico">
+            <input type="password" placeholder="contraseña">
+            <button>Entrar</button>
+        </form>
+        <form action=""class="formulario__registro">
+            <h2>Registrarse</h2>
+            <input type="text" placeholder="Nombre completo">
+            <input type="text" placeholder="Correo electronico">
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="contraseña">
+            <button>Registrarse</button>    
+        </form>
+    </div>
+    -->
+    
+</body>
+</html>

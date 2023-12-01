@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.contenedor-general{
+    background: rgba(128, 158, 228, 0.554);
+    height: 94rem;
+}
+
+nav{
+    background-color:rgb(40, 40, 226);
+    height: 110px;
+    width: 100%;
+    }
+    
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    
+    .logo{
+        height: 70px;
+        width: 250px;
+    }
+    
+    nav ul{
+       
+        float: right;
+        margin-right: 20px;
+    }
+
+
+    nav ul li{
+        
+        display: inline-block;
+        line-height: 105px;
+        margin:  0 5px;
+    }
+    
+    nav ul li a{
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+    .section h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+        height: 60px;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.9em;
+        color: rgb(17, 17, 16);
+
+    }
+    .filtro{
+        color: #4712f3;
+        margin-left: 59%;
+        height: 30px;
+       
+    }
+
+    .section label{
+        height: 100px;
+       
+
+
+    }
+    .section input{
+        width: 66px;
+    }
+
+    section button{
+        border-radius: 10px;
+        height: 25px;
+        width: 45px;
+        background-color: rgb(231, 181, 31);
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.1s ease;
+        font-size: 14px;
+    }
+
+    .section button:hover{
+        background-color: rgb(229, 99, 6);
+    }
+    
+   
+    li a.active, li a:hover{
+        background: #000090;
+        transition: .5s;
+    }
+    
+    .checkbtn{
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    section{
+        
+        background-size: cover;
+        background-position: center center;
+        height: calc(100vh - 80px); 
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .products{
+        display: grid;
+        gap: 150px;
+        column-gap:2px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        text-align: center;  
+        
+    }
+
+    .prod{
+        width: 250px;
+        box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.9);
+        display: grid;
+        align-items: center;
+        flex-basis: calc(33.3% - 15px);
+        background-color: #ffffff;
+        padding: 30px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+    }
+    
+
+    .prod-img img{
+        width: 150px;
+        height: 170px;
+    }
+
+    
+
+    .prod-txt h3{
+        font-size: 25px;
+        font-family:'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: #b01414;
+    }
+
+    .prod-txt p{
+        font-family:'Times New Roman', Times, serif;
+        color: #563bdd;
+        font-size: 20px;
+
+    }
+    
+    .btn-2{
+    color:white;
+    width: 6%;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.1s ease;
+    background-color: #4712f3;
+
+    }
+
+    .btn-2:hover{
+        background-color: rgb(218, 32, 32);
+    }
+
+    .edit-btn{
+        color:white;
+        width: 60%;
+        height: 22px;
+        border-radius:10px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.1s ease;
+        background-color: #e93473;
+    }
+
+    #popupCard {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: width 0.3s, height 0.3s;
+    }
+    
+    #popupCard.active {
+        width: 700px; 
+        height: 600px; 
+    } en el css
+
+    .footer {
+        padding: 20px 3px;
+        
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        background-color: #063970;
+        top: 500px;
+        
+        
+    }
+    
+.link h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #dcdcdc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+    @media (max-width: 952px){
+        .enlace{
+            padding-left: 20px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: red;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }
+    @media (max-width: 952px){
+        .pagination{
+            padding-left: 20px;
+        }
+        .btn-2{
+            font-size: 16px;
+        }
+    }
+
+
+    .detalle-section h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+        height: 60px;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.5em;
+        color: red;
+
+    }
+
+    .container1{
+       
+       display: flex;
+        justify-content: space-evenly;
+        text-align: center;  
+        
+
+    }
+    .detalle-txt h3{
+        margin-top: -3px;
+        font-size: 50px;
+        font-family:'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: #b01414;
+
+    }
+    
+    .detalle-img img{
+        box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.9);
+        text-align: center;  
+        width: 500px;
+        height:550px;
+    }
+    
+    .detalle-txt{
+        width: 400px;
+        box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        color: #563bdd;
+    
+    }
+    
+    .detalle-txt p{
+        font-family:'Times New Roman', Times, serif;
+        color: #563bdd;
+        font-size: 35px;
+    }
+
+    .cerrar-sesion {
+        font-family:sans-serif;
+        font-size: small;
+        cursor: pointer;
+        border: 1px solid #fff;
+        padding: 7px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+
+    
+/* Popup Styles */
+#popupCard {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s, height 0.3s;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    #popupCard {
+        max-width: 80%;
+        width: auto;
+        height: auto;
+    }
+}
+
+#popupCard.active {
+    display: block;
+}
+
+#popupCard.active {
+    width: 700px;
+    height: 600px;
+}

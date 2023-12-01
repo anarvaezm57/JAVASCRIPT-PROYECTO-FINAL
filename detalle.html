@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="css/estiloweb.css">
+
+</head>
+
+<body>
+    <header>
+        <header>
+            <nav> 
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <img src="imagen/logo.png" alt="" class="logo">
+                </a>
+                <ul>
+                    <li><a class="active" href="paginaweb.html">Inicio</a></li>
+                    <li><a href="#">informacion</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">contactos</a></li>
+                </ul>
+            </nav>
+            </header>
+    </header>
+
+    <!-- Popup de Tarjeta -->
+    <div id="popupCard"></div>
+
+    <section class="detalle-section">
+        <h1>DETALLES DEL PRODUCTO</h1>
+        <br> <br> <br>
+        <div id="producto-container">
+
+            <div class="detalle-editar">
+                <button onclick="openEditModal()">Editar</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="pageInfo"></div>
+
+    
+    <footer>
+
+    </footer>
+
+    <script src="./js/productos.js"></script>
+    <script src="./js/detalle.js"></script>
+  
+</body>
+
+</html>
