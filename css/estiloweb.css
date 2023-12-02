@@ -12,7 +12,7 @@
 }
 
 nav{
-    background-color:rgb(40, 40, 226);
+    background-color:rgb(10, 10, 139);
     height: 110px;
     width: 100%;
     }
@@ -93,7 +93,7 @@ nav{
     
    
     li a.active, li a:hover{
-        background: #000090;
+        background: #4c4ccc;
         transition: .5s;
     }
     
@@ -310,7 +310,6 @@ nav{
     }
 
     .container1{
-       
        display: flex;
         justify-content: space-evenly;
         text-align: center;  
